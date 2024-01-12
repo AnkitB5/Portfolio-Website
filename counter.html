@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="timeProject.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700|Source+Sans+Pro:400,700|Nunito:400,700|Montserrat:400,700|Poppins:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Nav -->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href = "/index.html">
+                <img src = "images/1.4.png" alt= "Ankit Bhattarai" id= "navbar__logo"> </img>
+            </a>
+            <div class="navbar__toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="/index.html" class="navbar__links" id="home-page">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/about.html" class="navbar__links" id="home-page">About Me</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/projects.html" class="navbar__links" id="home-page">Projects</a>
+                </li>
+                
+            </ul>
+        </div>
+    </nav>
+    <!-- Body Section -->
+    <div class="counter">
+        <div class="localContainer">
+                <h3>Local Time:
+                </h3>  
+                <div id="date"></div>
+                <div id="time"></div>  
+        </div>
+        <div class="progressContainer">
+            <div class="day">
+                <div class="dayCircle">
+                    <div class="outer">
+                        <div class="inner">
+                            <div id="dayProgressPct">
+            
+                        
+                            </div>
+                        </div>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                        <defs>
+                        <linearGradient id="GradientColor">
+                            <stop offset="0%" stop-color="#e91e63" />
+                            <stop offset="100%" stop-color="#673ab7" />
+                        </linearGradient>
+                        </defs>
+                        <circle id= 'myDayCircle' cx="80" cy="80" r="70" stroke-linecap="round" />
+                    </svg>
+                
+                </div>
+                <div class="dayLabel">
+                    We are&nbsp;<span id ="dayProgressPct2"></span> &nbsp;through today!
+                </div>
+            </div>
+            <div class="month">
+                <div class="monthCircle">
+                    <div class="outer">
+                        <div class="inner">
+                            <div id="monthProgressPct">
+            
+                        
+                            </div>
+                        </div>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                        <defs>
+                        <linearGradient id="GradientColor">
+                            <stop offset="0%" stop-color="#e91e63" />
+                            <stop offset="100%" stop-color="#673ab7" />
+                        </linearGradient>
+                        </defs>
+                        <circle id= 'myMonthCircle' cx="80" cy="80" r="70" stroke-linecap="round" />
+                    </svg>
+                
+                </div>
+                <div class="monthLabel">
+                    We are&nbsp;<span id ="monthProgressPct2"></span> &nbsp;through this month!
+                </div>
+            </div>
+            <div class="year">
+                <div class="yearCircle">
+                    <div class="outer">
+                        <div class="inner">
+                            <div id="yearProgressPct">
+
+                        
+                            </div>
+                        </div>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                        <defs>
+                        <linearGradient id="GradientColor">
+                            <stop offset="0%" stop-color="#e91e63" />
+                            <stop offset="100%" stop-color="#673ab7" />
+                        </linearGradient>
+                        </defs>
+                        <circle id= 'myYearCircle' cx="80" cy="80" r="70" stroke-linecap="round" />
+                </svg>
+                </div>
+                <div class="yearLabel">
+                    We are&nbsp;<span id ="yearProgressPct2"></span> &nbsp;through this year!
+                </div>
+            </div>
+
+    </div>
+    </div>
+<!-- Footer Section -->
+    <footer>
+        <div class="footer__container">
+            <div class="socialIcons">
+                <a href="https://www.linkedin.com/in/ankitbhattarai76/"target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/AnkitB5"target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.instagram.com/ankit.bhattarai_/"target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="mailto:ankitbhattarai76@gmail.com"target="_blank"><i class="fas fa-envelope"></i></a>
+            </div>
+            <div class="footer__nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href=""></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p>Copyright &copy; 2023. Created by <span class="designer">Ankit Bhattarai</span></p>
+        </div>
+    </footer>
+<script src="app.js"></script>
+<script src="timeProject.js"></script>
+</body>
+
+</html>
