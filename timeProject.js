@@ -1,12 +1,11 @@
 //Date & Time in counter section
 setInterval(function() {
     var currentTime = new Date();
-    document.getElementById('date').innerHTML = currentTime.toLocaleDateString()
+    document.getElementById('date').innerHTML = currentTime.toLocaleDateString();
     hours = currentTime.getHours();
     minutes = currentTime.getMinutes();
     seconds = currentTime.getSeconds();
     document.getElementById('time').innerHTML = hours + ":" + minutes + ":" + seconds;
-    
   }, 1000);
 
  //Progress Bar 
